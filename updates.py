@@ -111,6 +111,12 @@ def get_updates() -> list[(str, str, str)]:
             break
 
         service = elems[1].text
+        id_till_i = 0
+        while (service[id_till_i].isdigit()):
+            id_till_i += 1
+        
+        service = service[:id_till_i] + ' ' + service[id_till_i:]
+
         change = elems[3].text        
 
         updates.append((service, change, time_s))
