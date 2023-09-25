@@ -36,11 +36,14 @@ async def send_updates(context: ContextTypes.DEFAULT_TYPE):
 
     context.bot_data['logged'] = True
 
-    s = ''
-    for update in u:
-        s += f'{update[0]}\n{update[1]}\nDate: {update[2]}\n\n'
+    u.reverse()
 
-    if len(s) > 0:
+    for i in range((len(u)-1) // 15 + 1):
+        s = ''
+
+        for update in u[i*15:(i+1)*15]:
+            s += f'{update[0]}\n{update[1]}\nDate: {update[2]}\n\n'
+
         await context.bot.send_message(CHAT_ID, s)
 
 async def auth_code(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -55,6 +58,7 @@ async def auth_code(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     context.bot_data['logged'] = True
     context.bot_data['driver'].quit()
+    context.bot_data['driver'] = None
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(update.effective_chat.id)

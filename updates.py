@@ -74,6 +74,7 @@ def enter_passcode(driver: webdriver.Firefox, passcode) -> bool:
     return True
 
 def get_updates() -> list[(str, str, str)]:
+    global LAST_UPDATE
     driver = get_driver()
 
     driver.get(URL)
@@ -104,7 +105,7 @@ def get_updates() -> list[(str, str, str)]:
         _time = datetime.strptime(time_s, '%Y-%m-%d %H:%M:%S')
         stamp = datetime.timestamp(_time)
         if new_time == None: new_time = stamp
-        if new_time_s == None: new_time_s = stamp
+        if new_time_s == None: new_time_s = time_s
 
         if stamp <= LAST_UPDATE:
             break
