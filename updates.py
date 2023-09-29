@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 import yaml
 from datetime import datetime
+from email_getter import get_mail_code
 
 URL = 'https://smm-heaven.net/admin/updates'
 ADMIN_CRED = yaml.safe_load(open('credentials.yaml'))['SMMHEAVEN']['ADMIN']
@@ -90,8 +91,17 @@ def get_updates() -> list[(str, str, str)]:
         pass
 
     if table == None:
-        driver.quit()
-        return None
+        try:
+            login(driver)
+            code = get_mail_code()
+            enter_passcode(driver, str(code))
+
+            table = WebDriverWait(driver, MAX_WAIT_TIME).until(
+                expected_conditions.presence_of_element_located((By.TAG_NAME, 'table'))
+            )
+        except BaseException:
+            driver.quit()
+            return []
 
     table = table.find_element(by=By.TAG_NAME, value='tbody')
     children = table.find_elements(by=By.XPATH, value='*')
@@ -101,7 +111,7 @@ def get_updates() -> list[(str, str, str)]:
     new_time_s = None
     for c in children:
         elems = c.find_elements(by=By.XPATH, value='*')
-        time_s = elems[2].text
+        time_s = elems[1].text
         _time = datetime.strptime(time_s, '%Y-%m-%d %H:%M:%S')
         stamp = datetime.timestamp(_time)
         if new_time == None: new_time = stamp
@@ -110,14 +120,14 @@ def get_updates() -> list[(str, str, str)]:
         if stamp <= LAST_UPDATE:
             break
 
-        service = elems[1].text
+        service = elems[0].text
         id_till_i = 0
         while (service[id_till_i].isdigit()):
             id_till_i += 1
         
         service = service[:id_till_i] + ' ' + service[id_till_i:]
 
-        change = elems[3].text        
+        change = elems[2].text
 
         updates.append((service, change, time_s))
 

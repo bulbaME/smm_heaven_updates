@@ -412,3 +412,87 @@ Read port: 59489
 DevTools listening on ws://127.0.0.1:59482/devtools/browser/efeff544-d513-4003-95ef-63304b2e1fe5
 1695654419846	Marionette	INFO	Stopped listening on port 59489
 Dynamically enable window occlusion 1
+1696003369808	geckodriver	INFO	Listening on 127.0.0.1:60203
+1696003372891	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--window-size=800,800" "--remote-debugging ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER2~1\\AppData\\Local\\Temp\\rust_mozprofilesWU8v4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696003373092	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-window-size"
+1696003373138	Marionette	INFO	Listening on port 60211
+WebDriver BiDi listening on ws://127.0.0.1:60204
+Read port: 60211
+1696003373290	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60204/devtools/browser/e9cf30b3-f3c5-4991-9e2a-773ccf8ba8af
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://smm-heaven.net."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://smm-heaven.net."
+1696003429739	geckodriver	INFO	Listening on 127.0.0.1:60256
+1696003432788	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--window-size=800,800" "--remote-debugging ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER2~1\\AppData\\Local\\Temp\\rust_mozprofile53Bbcy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696003432986	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-window-size"
+1696003433033	Marionette	INFO	Listening on port 60264
+WebDriver BiDi listening on ws://127.0.0.1:60257
+Read port: 60264
+1696003433181	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60257/devtools/browser/796b95d0-f28d-4c5f-9fbb-b304322dd323
+1696003662609	geckodriver	INFO	Listening on 127.0.0.1:60374
+1696003665651	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--window-size=800,800" "--remote-debugging ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER2~1\\AppData\\Local\\Temp\\rust_mozprofileQX9m9S"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696003665867	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-window-size"
+1696003665913	Marionette	INFO	Listening on port 60383
+WebDriver BiDi listening on ws://127.0.0.1:60375
+Read port: 60383
+1696003666058	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60375/devtools/browser/810bdea1-295c-4810-a4f7-300199e3f0fc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://smm-heaven.net."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://smm-heaven.net."
+1696003697320	geckodriver	INFO	Listening on 127.0.0.1:60438
+1696003796643	geckodriver	INFO	Listening on 127.0.0.1:60506
+1696003799684	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--window-size=800,800" "--remote-debugging ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER2~1\\AppData\\Local\\Temp\\rust_mozprofile2x6YpS"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696003799878	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-window-size"
+1696003799923	Marionette	INFO	Listening on port 60515
+WebDriver BiDi listening on ws://127.0.0.1:60507
+Read port: 60515
+1696003800068	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60507/devtools/browser/7e481a46-50d1-42bc-ad8f-0d1f1c909365
+1696003803895	Marionette	INFO	Stopped listening on port 60515
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/UrlClassifierListManager.sys.mjs, line 720: TypeError: this.tablesData[table] is undefined
+1696003826635	geckodriver	INFO	Listening on 127.0.0.1:60565
+1696003829684	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--window-size=800,800" "--remote-debugging ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER2~1\\AppData\\Local\\Temp\\rust_mozprofilesTqqz3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696003829885	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-window-size"
+1696003829930	Marionette	INFO	Listening on port 60575
+WebDriver BiDi listening on ws://127.0.0.1:60566
+Read port: 60575
+1696003830073	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60566/devtools/browser/045a1867-1951-4e04-8520-28dba502b212
+1696003836365	Marionette	INFO	Stopped listening on port 60575
+Dynamically enable window occlusion 1
+1696003856634	geckodriver	INFO	Listening on 127.0.0.1:60626
+1696003859681	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--window-size=800,800" "--remote-debugging ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER2~1\\AppData\\Local\\Temp\\rust_mozprofileSkUW7G"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696003859870	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-window-size"
+1696003859915	Marionette	INFO	Listening on port 60635
+WebDriver BiDi listening on ws://127.0.0.1:60627
+Read port: 60635
+1696003860061	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60627/devtools/browser/6af31adb-7542-4a87-841d-7b3a46ee4884
+1696003862000	Marionette	INFO	Stopped listening on port 60635
+Dynamically enable window occlusion 1
