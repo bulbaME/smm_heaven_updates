@@ -31,12 +31,12 @@ def set_admin_hash(h: str):
 
 def get_driver() -> webdriver.Firefox:
     driver_opt = Options()
-    driver_service = Service(executable_path='./geckodriver.exe')
+    # driver_service = Service(executable_path='./geckodriver.exe')
     driver_opt.headless = True
     driver_opt.add_argument("--window-size=800,800")
     driver_opt.page_load_strategy = 'eager'
 
-    return webdriver.Firefox(options=driver_opt, service=driver_service)
+    return webdriver.Firefox(options=driver_opt)
 
 def login(driver: webdriver.Firefox):
     form: WebElement = WebDriverWait(driver, MAX_WAIT_TIME).until(
