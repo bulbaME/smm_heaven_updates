@@ -34,6 +34,7 @@ def get_driver() -> webdriver.Firefox:
     # driver_service = Service(executable_path='./geckodriver.exe')
     driver_opt.headless = True
     driver_opt.add_argument("--window-size=800,800")
+    driver_opt.add_argument("--headless")
     driver_opt.page_load_strategy = 'eager'
 
     return webdriver.Firefox(options=driver_opt)
