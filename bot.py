@@ -38,10 +38,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def init():
     application = ApplicationBuilder().token(TOKEN).build()
-    application.job_queue.run_repeating(send_updates, 30)
+    application.job_queue.run_repeating(send_updates, 300)
 
 
     # start_hndl = CommandHandler('start', start)
     # application.add_handler(start_hndl)
 
-    application.run_polling(timeout=60, pool_timeout=300)
+    application.run_polling(timeout=60, pool_timeout=30)
