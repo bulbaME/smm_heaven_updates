@@ -21,8 +21,6 @@ async def send_updates(context: ContextTypes.DEFAULT_TYPE):
     if u == None:
         return 
 
-    context.bot_data['logged'] = True
-
     u.reverse()
 
     for i in range((len(u)-1) // 15 + 1):
@@ -38,7 +36,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def init():
     application = ApplicationBuilder().token(TOKEN).build()
-    application.job_queue.run_repeating(send_updates, 300)
+    application.job_queue.run_repeating(send_updates, 30)
 
 
     # start_hndl = CommandHandler('start', start)

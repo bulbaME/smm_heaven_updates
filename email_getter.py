@@ -29,6 +29,8 @@ def get_mail_code():
         if len(mail_ids) == 0:
             continue
 
+        print('[retrieving passcode]')
+
         _, data = mail.fetch(mail_ids[0], '(RFC822)')
         for response_part in data:
                 if isinstance(response_part, tuple):

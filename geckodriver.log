@@ -496,3 +496,19 @@ Read port: 60635
 DevTools listening on ws://127.0.0.1:60627/devtools/browser/6af31adb-7542-4a87-841d-7b3a46ee4884
 1696003862000	Marionette	INFO	Stopped listening on port 60635
 Dynamically enable window occlusion 1
+1697027879954	geckodriver	INFO	Listening on 127.0.0.1:55222
+1697027882985	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--window-size=800,800" "--remote-debugging ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\USER2~1\\AppData\\Local\\Temp\\rust_mozprofileqOWpNX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697027883262	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-window-size"
+1697027883331	Marionette	INFO	Listening on port 55233
+WebDriver BiDi listening on ws://127.0.0.1:55223
+Read port: 55233
+1697027883557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55223/devtools/browser/3415bca4-467f-4ed9-ba58-c901a2cc910e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://smm-heaven.net."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://smm-heaven.net."
+1697027908279	Marionette	INFO	Stopped listening on port 55233
+Dynamically enable window occlusion 1

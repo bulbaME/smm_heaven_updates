@@ -51,6 +51,8 @@ def login(driver: webdriver.Firefox):
     inputs[0].send_keys(ADMIN_CRED['LOGIN'])
     inputs[1].send_keys(ADMIN_CRED['PSW'])
 
+    print('[logging in]')
+
     form.submit()
 
 def enter_passcode(driver: webdriver.Firefox, passcode) -> bool:
@@ -103,6 +105,8 @@ def get_updates() -> list[(str, str, str)]:
         except BaseException:
             driver.quit()
             return []
+        
+    print('[parsing updates]')
 
     table = table.find_element(by=By.TAG_NAME, value='tbody')
     children = table.find_elements(by=By.XPATH, value='*')
