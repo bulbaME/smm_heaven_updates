@@ -16,6 +16,8 @@ def get_mail_code():
     mail.select('inbox')
     tf = time()
 
+    print('[retrieving passcode]')
+
     while True:
         status, data = mail.search(None, '(UNSEEN)')
         mail_ids = []
@@ -28,8 +30,6 @@ def get_mail_code():
 
         if len(mail_ids) == 0:
             continue
-
-        print('[retrieving passcode]')
 
         _, data = mail.fetch(mail_ids[0], '(RFC822)')
         for response_part in data:
