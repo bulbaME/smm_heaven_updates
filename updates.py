@@ -11,7 +11,9 @@ from email_getter import get_mail_code
 
 URL = 'https://smm-heaven.net/admin/updates'
 ADMIN_CRED = yaml.safe_load(open('credentials.yaml'))['SMMHEAVEN']['ADMIN']
-LAST_UPDATE = datetime.timestamp(datetime.strptime(open('lastupdate.time').readline(), '%Y-%m-%d %H:%M:%S'))
+fr = open('lastupdate.time')
+LAST_UPDATE = datetime.timestamp(datetime.strptime(fr.readline(), '%Y-%m-%d %H:%M:%S'))
+fr.close()
 MAX_WAIT_TIME = 10
 
 def get_admin_hash() -> str | None:

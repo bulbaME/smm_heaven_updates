@@ -36,7 +36,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def init():
     application = ApplicationBuilder().token(TOKEN).build()
-    application.job_queue.run_repeating(send_updates, 30)
+    application.job_queue.run_repeating(send_updates, 600)
 
 
     # start_hndl = CommandHandler('start', start)
